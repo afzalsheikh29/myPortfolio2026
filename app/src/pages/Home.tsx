@@ -166,14 +166,14 @@ export function Home() {
           >
             <div className="relative">
               {/* Glow effect - Enhanced */}
-              <div className="absolute -inset-4 bg-gradient-to-r from-coral/20 via-coral/10 to-transparent rounded-3xl blur-3xl" />
+              <div className="absolute -top-12 -left-8 -right-8 h-[120%] bg-[radial-gradient(ellipse_at_top,rgba(255,90,90,0.35),transparent_65%)] blur-3xl" />
 
               {/* Image container - Better contrast */}
-              <div className="relative w-72 h-96 md:w-80 md:h-[28rem] lg:w-96 lg:h-[32rem] rounded-3xl overflow-hidden border-2 border-white/20 shadow-2xl">
+              <div className="relative w-72 h-96 md:w-80 md:h-[28rem] lg:w-96 lg:h-[36rem] rounded-3xl overflow-hidden border-2 border-white/20 shadow-2xl">
                 <img
                   src="/images/profile.png"
                   alt="Afzal Khan"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-top"
                   onError={(e) => {
                     // Fallback to jpg if png doesn't exist
                     e.currentTarget.src = "/images/profile.jpg";
