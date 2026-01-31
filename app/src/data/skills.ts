@@ -12,7 +12,7 @@ export const skillCategories: SkillCategory[] = [
   {
     title: "Cloud Platforms",
     skills: [
-      { name: "AWS (EC2, S3, RDS, Lambda, IAM, VPC, CloudWatch)", icon: "aws" },
+      { name: "AWS", icon: "aws" },
       { name: "Azure", icon: "azure" },
       { name: "GCP", icon: "gcp" },
     ],

@@ -18,8 +18,9 @@ export function Projects() {
           </span>
           <h1 className="heading-xl text-white mb-4">Featured Projects</h1>
           <p className="body-lg max-w-2xl">
-            A collection of production-grade cloud and DevOps projects showcasing
-            real-world solutions to complex infrastructure challenges.
+            A collection of production-grade cloud and DevOps projects
+            showcasing real-world solutions to complex infrastructure
+            challenges.
           </p>
         </AnimatedSection>
 
@@ -54,7 +55,11 @@ export function Projects() {
 
           <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
             {otherProjects.map((project, index) => (
-              <ProjectCard key={project.id} project={project} index={index + 2} />
+              <ProjectCard
+                key={project.id}
+                project={project}
+                index={index + 2}
+              />
             ))}
           </div>
         </div>
@@ -69,7 +74,7 @@ export function Projects() {
               transition={{ duration: 0.6, delay: 0.9 }}
               className="bg-dark-secondary border border-white/10 rounded-2xl p-6 text-center"
             >
-              <p className="text-4xl font-bold text-coral mb-2">6</p>
+              <p className="text-4xl font-bold text-coral mb-2">7</p>
               <p className="text-white/50 text-sm uppercase tracking-wider">
                 Projects Completed
               </p>

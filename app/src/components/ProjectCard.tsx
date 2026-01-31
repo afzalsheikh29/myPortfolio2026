@@ -80,7 +80,10 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
               </h4>
               <ul className="space-y-1">
                 {project.architecture.map((item, i) => (
-                  <li key={i} className="text-white/60 text-sm flex items-center gap-2">
+                  <li
+                    key={i}
+                    className="text-white/60 text-sm flex items-center gap-2"
+                  >
                     <span className="w-1.5 h-1.5 bg-coral rounded-full" />
                     {item}
                   </li>
@@ -94,7 +97,10 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
               </h4>
               <ul className="space-y-1">
                 {project.outcomes.map((outcome, i) => (
-                  <li key={i} className="text-white/60 text-sm flex items-center gap-2">
+                  <li
+                    key={i}
+                    className="text-white/60 text-sm flex items-center gap-2"
+                  >
                     <span className="w-1.5 h-1.5 bg-coral rounded-full" />
                     {outcome}
                   </li>

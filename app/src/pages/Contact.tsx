@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { AnimatedSection } from "@/components/AnimatedSection";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, MapPin, Phone, Linkedin, Send } from "lucide-react";
+import { Mail, MapPin, Phone, Linkedin, Github, Send } from "lucide-react";
 import { useState } from "react";
 
 export function Contact() {
@@ -34,6 +34,12 @@ export function Contact() {
       href: "https://linkedin.com/in/afzalkhan29",
     },
     {
+      icon: Github,
+      label: "GitHub",
+      value: "github.com/afzalsheikh29",
+      href: "https://github.com/afzalsheikh29",
+    },
+    {
       icon: Phone,
       label: "Phone",
       value: "+91-9193001060",
@@ -57,8 +63,9 @@ export function Contact() {
           </span>
           <h1 className="heading-xl text-white mb-4">Get In Touch</h1>
           <p className="body-lg max-w-2xl mx-auto">
-            Open to Cloud / DevOps Engineer opportunities. Let's discuss how I can
-            help build reliable, scalable infrastructure for your organization.
+            Open to Cloud / DevOps Engineer opportunities. Let's discuss how I
+            can help build reliable, scalable infrastructure for your
+            organization.
           </p>
         </AnimatedSection>
 
@@ -85,6 +92,12 @@ export function Contact() {
                   <motion.a
                     key={item.label}
                     href={item.href}
+                    target={item.href.startsWith("http") ? "_blank" : undefined}
+                    rel={
+                      item.href.startsWith("http")
+                        ? "noopener noreferrer"
+                        : undefined
+                    }
                     initial={{ opacity: 0, x: -20 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
@@ -108,22 +121,6 @@ export function Contact() {
                     </div>
                   </motion.a>
                 ))}
-              </div>
-
-              {/* Availability Badge */}
-              <div className="mt-8 p-4 rounded-xl bg-coral/10 border border-coral/20">
-                <div className="flex items-center gap-3">
-                  <div className="relative">
-                    <div className="w-3 h-3 bg-green-500 rounded-full" />
-                    <div className="absolute inset-0 w-3 h-3 bg-green-500 rounded-full animate-ping" />
-                  </div>
-                  <div>
-                    <p className="text-white font-medium">Available for Work</p>
-                    <p className="text-white/50 text-sm">
-                      Open to full-time opportunities
-                    </p>
-                  </div>
-                </div>
               </div>
             </div>
           </motion.div>

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Linkedin, Mail, Phone } from "lucide-react";
+import { Linkedin, Mail, Phone, Github } from "lucide-react";
 
 export function Footer() {
   return (
@@ -15,7 +15,7 @@ export function Footer() {
           <p className="text-white/50 text-sm mb-4">
             Always building reliable cloud systems. Always learning.
           </p>
-          
+
           <div className="flex items-center gap-6 mb-6">
             <a
               href="https://linkedin.com/in/afzalkhan29"
@@ -26,19 +26,27 @@ export function Footer() {
               <Linkedin className="w-5 h-5" />
             </a>
             <a
+              href="https://github.com/afzalsheikh29"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white/50 hover:text-coral transition-colors duration-200"
+            >
+              <Github className="w-5 h-5" />
+            </a>
+            <a
               href="mailto:khan29afzal@gmail.com"
               className="text-white/50 hover:text-coral transition-colors duration-200"
             >
               <Mail className="w-5 h-5" />
             </a>
             <a
-              href="tel:+919193001060"
+              href="tel:+91-9193001060"
               className="text-white/50 hover:text-coral transition-colors duration-200"
             >
               <Phone className="w-5 h-5" />
             </a>
           </div>
-          
+
           <p className="text-white/30 text-xs">
             © {new Date().getFullYear()} Afzal Khan. All rights reserved.
           </p>

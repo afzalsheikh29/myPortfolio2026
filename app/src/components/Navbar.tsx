@@ -47,7 +47,7 @@ export function Navbar() {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
             <span className="text-xl font-bold tracking-tight uppercase text-white">
-              Afzal<span className="text-coral">.</span>Khan
+              Afzal Khan
             </span>
           </Link>
 
@@ -71,8 +71,8 @@ export function Navbar() {
           {/* CTA Button */}
           <div className="hidden lg:block">
             <a
-              href="/resume.pdf"
-              download
+              href="/Afzal_khan-resume.pdf"
+              download="Afzal_Khan_Resume.pdf"
               className="btn-secondary text-sm flex items-center gap-2 py-3 px-6"
             >
               <Download className="w-4 h-4" />
