@@ -6,7 +6,7 @@ export function Home() {
   return (
     <section className="min-h-screen flex items-center pt-20 bg-gradient-to-b from-dark-primary via-dark-primary to-dark-secondary/50">
       <div className="container-custom">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
           {/* Text Content */}
           <motion.div
             initial={{ opacity: 0 }}
@@ -37,7 +37,7 @@ export function Home() {
                 delay: 0.2,
                 ease: [0.165, 0.84, 0.44, 1] as const,
               }}
-              className="heading-xl text-white mb-6 leading-tight"
+              className="text-4xl md:text-5xl lg:text-6xl font-extrabold uppercase tracking-tight text-white mb-6 leading-[1.1]"
             >
               Architecting
               <br />
@@ -54,7 +54,7 @@ export function Home() {
                 delay: 0.4,
                 ease: [0.165, 0.84, 0.44, 1] as const,
               }}
-              className="body-lg max-w-xl mb-10 text-white/80 leading-relaxed"
+              className="text-base md:text-lg max-w-xl mb-8 text-white/70 leading-relaxed"
             >
               Results-oriented Cloud & DevOps Engineer architecting scalable
               infrastructure on AWS, Azure, and GCP. Expert in automating CI/CD
@@ -164,7 +164,7 @@ export function Home() {
             }}
             className="order-1 lg:order-2 flex justify-center lg:justify-end"
           >
-            <div className="relative">
+            <div className="relative isolate">
               {/* Glow effect - Enhanced */}
               <div className="absolute -top-12 -left-8 -right-8 h-[120%] bg-[radial-gradient(ellipse_at_top,rgba(255,90,90,0.35),transparent_65%)] blur-3xl" />
 
