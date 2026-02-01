@@ -115,8 +115,8 @@ export function Navbar() {
                 </nav>
                 <div className="mt-auto p-6 border-t border-white/10">
                   <a
-                    href="/resume.pdf"
-                    download
+                    href="/Afzal_khan-resume.pdf"
+                    download="Afzal_Khan_Resume.pdf"
                     className="btn-primary w-full flex items-center justify-center gap-2"
                   >
                     <Download className="w-4 h-4" />
